@@ -1,18 +1,30 @@
 import logo from './logo.svg';
+import twitter from './twitter.svg';
+import instagram from './instagram.svg';
+import blogger from './blogger.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+      </style>
       <header className="App-header">
         <div className="logo-wrapper">
-          <h1>Our Blog Name</h1>
-          <img src = 'logo.png'/>
+          <img alt="pizza logo" className="header-logo" src={logo}/>
+          <h1>Pizza Time!</h1>
         </div>
         <div className="button-wrapper">
-          <button>Twitter</button>
-          <button>Instagram</button>
-          <button>Blogger</button>
+          <button>
+            <img alt="twitter logo" src={twitter}/>
+          </button>
+          <button>
+            <img alt="instagram logo" src={instagram}/>
+          </button>
+          <button>
+            <img alt="blogger logo" src={blogger}/>
+          </button>
         </div>
       </header>
       <main className="main">
