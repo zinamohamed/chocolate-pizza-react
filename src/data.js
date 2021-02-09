@@ -1,4 +1,4 @@
- const ingredientsArray = [
+ const IngredientsArray = [
   {
     ingredient: 'Pizza Dough',
     quantity: '1 ball',
@@ -21,4 +21,4 @@
   },
 ]
 
-export default ingredientsArray;
+export default IngredientsArray;
