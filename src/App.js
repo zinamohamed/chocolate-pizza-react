@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import twitter from './twitter.svg';
 import instagram from './instagram.svg';
 import blogger from './blogger.svg';
+import pizza from './pizza.jpeg'
+import pizza2 from './pizza2.jpeg'
 import './App.css';
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
     <div className="App">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&family=Quicksand:wght@300&display=swap');
       </style>
       <header className="App-header">
         <div className="logo-wrapper">
@@ -29,27 +32,32 @@ function App() {
       </header>
       <main className="main">
         <div className="image-title-wrapper">
-          <h2>Recipe Name</h2>
-          <span>02/08/2020</span>
+          <h2>Margherita Pizza</h2>
+          <span>DATE POSTED: 02/08/2020</span>
         </div>
-        <div className="image-wrapper">
-          <img src ="recipe-img.png"/>
-        </div>
-        <div className="recipe">
-          <p>Lorem Ipsum</p>
-          <p>Lorem Ipsum</p>
-          <p>Lorem Ipsum</p>
-        </div>
-        <div className="ingrediants">
+        <div className="image-recipe-wrapper">
+          <img src ={pizza2}/>
+        <div className="recipe-ingrediants">
+          <h3>Ingredients</h3>
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
+              <li>Pizza Dough</li>
+              <li>Margherita Sauce</li>
+              <li>Mozarella Cheese</li>
+              <li>Tomatoes</li>
+              <li>Basil</li>
           </ul>
+          <h3>Steps</h3>
+          <ol>
+              <li>Preheat your oven to 450 degrees.</li>
+              <li>Stretch your dough into your desired pizza shape</li>
+              <li>Add your Margherita sauce.</li>
+              <li>Drop some cheese on that baby!</li>
+              <li>Add your toppings.</li>
+              <li>Pop in the oven for 15 minutes or until crust is golden brown.</li>
+              <li>Serve with crushed red pepper.</li>
+          </ol>
         </div>
+        </div> 
       </main>
       <footer>
         <img src="footer-img"/>
