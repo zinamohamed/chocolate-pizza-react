@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import twitter from './twitter.svg';
 import instagram from './instagram.svg';
 import blogger from './blogger.svg';
-import pizza from './pizza.jpeg'
-import pizza2 from './pizza2.jpeg'
+import pizza2 from './pizza2.jpeg';
+import chef from './chef.svg';
 import './App.css';
 
 function App() {
@@ -31,39 +31,45 @@ function App() {
         </div>
       </header>
       <main className="main">
-        <div className="image-title-wrapper">
-          <h2>Margherita Pizza</h2>
-          <span>DATE POSTED: 02/08/2020</span>
+        <div className="main-wrapper">
+          <div className="title-wrapper">
+            <h2>Margherita Pizza</h2>
+            <span>DATE POSTED: 02/08/2020</span>
+          </div>
+            <div className="image-recipe-wrapper">
+              <img alt="margherita pizza" src ={pizza2}/>
+              <div className="recipe-ingrediants">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Pizza Dough</li>
+                    <li>Margherita Sauce</li>
+                    <li>Mozarella Cheese</li>
+                    <li>Tomatoes</li>
+                    <li>Basil</li>
+                </ul>
+                <h3>Steps</h3>
+                <ol>
+                    <li>Preheat your oven to 450 degrees.</li>
+                    <li>Stretch your dough into your desired pizza shape</li>
+                    <li>Add your Margherita sauce.</li>
+                    <li>Drop some cheese on that baby!</li>
+                    <li>Add your toppings.</li>
+                    <li>Pop in the oven for 15 minutes or until crust is golden brown.</li>
+                    <li>Serve with crushed red pepper.</li>
+                </ol>
+              </div>
+          </div>
         </div>
-        <div className="image-recipe-wrapper">
-          <img src ={pizza2}/>
-        <div className="recipe-ingrediants">
-          <h3>Ingredients</h3>
-          <ul>
-              <li>Pizza Dough</li>
-              <li>Margherita Sauce</li>
-              <li>Mozarella Cheese</li>
-              <li>Tomatoes</li>
-              <li>Basil</li>
-          </ul>
-          <h3>Steps</h3>
-          <ol>
-              <li>Preheat your oven to 450 degrees.</li>
-              <li>Stretch your dough into your desired pizza shape</li>
-              <li>Add your Margherita sauce.</li>
-              <li>Drop some cheese on that baby!</li>
-              <li>Add your toppings.</li>
-              <li>Pop in the oven for 15 minutes or until crust is golden brown.</li>
-              <li>Serve with crushed red pepper.</li>
-          </ol>
-        </div>
-        </div> 
       </main>
       <footer>
-        <img src="footer-img"/>
-        <p>Lorem</p>
-        <button>Share Recipe!</button>
-        <p>Copyright Stuff</p>
+        <div className="chef-wrapper">
+          <img alt="little cute chef" src={chef}/>
+          <p>One stop shop for all your favorite recipes with Little Chef!</p>
+          <button>Share Recipe!</button>
+        </div> 
+        <div className="copyright-wrapper">
+          <p>Copyright Stuff</p>
+        </div>
       </footer>
     </div>
   );
