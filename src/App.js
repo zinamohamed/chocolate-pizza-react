@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import twitter from './twitter.svg';
 import instagram from './instagram.svg';
@@ -5,8 +6,27 @@ import blogger from './blogger.svg';
 import pizza2 from './pizza2.jpeg';
 import chef from './chef.svg';
 import './App.css';
+// import { ingredientsList } from './ingredients.js';
+import { ingredientsArray }from './data.js';
 
-function App() {
+
+class IngredientItem extends React.Component {
+  render() {
+    return <div>
+      <p> {this.props.ingredientProp.quantity} {this.props.ingredientProp.ingredient} </p>
+    </div>
+  }
+}
+
+
+export default class App extends React.Component {
+  render() {
+    const ingredientsUL = ingredientsArray.map(
+      ingredient => 
+      <IngredientItem ingredientProp={
+        ingredient 
+      } />)
+  }
   return (
     <div className="App">
       <style>
@@ -40,13 +60,7 @@ function App() {
               <img alt="margherita pizza" src ={pizza2}/>
               <div className="recipe-ingrediants">
                 <h3>Ingredients</h3>
-                <ul>
-                    <li>Pizza Dough</li>
-                    <li>Margherita Sauce</li>
-                    <li>Mozarella Cheese</li>
-                    <li>Tomatoes</li>
-                    <li>Basil</li>
-                </ul>
+                  { ingredientsUL }
                 <h3>Steps</h3>
                 <ol>
                     <li>Preheat your oven to 450 degrees.</li>
