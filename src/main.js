@@ -19,7 +19,7 @@ class PizzaMain extends React.Component {
                   <h3>Steps</h3>
                   <ol>
                       <li>Preheat your oven to 450 degrees.</li>
-                      <li>Stretch your dough into your desired pizza shape</li>
+                      <li>Stretch your dough into your desired pizza shape.</li>
                       <li>Add your Margherita sauce.</li>
                       <li>Drop some cheese on that baby!</li>
                       <li>Add your toppings.</li>

@@ -1,15 +1,15 @@
  const IngredientsArray = [
   {
     ingredient: 'Pizza Dough',
-    quantity: '1 ball',
+    quantity: '1 ball of',
   },
   {
     ingredient: 'Margherita Sauce',
-    quantity: '500ml',
+    quantity: '500ml of',
   },
   {
     ingredient: 'Mozarella Cheese',
-    quantity: '20oz',
+    quantity: '20oz of',
   },
   {
     ingredient: 'Tomatoes',
@@ -17,7 +17,7 @@
   },
   {
     ingredient: 'Basil',
-    quantity: '1 handful',
+    quantity: '1 handful of',
   },
 ]
 
